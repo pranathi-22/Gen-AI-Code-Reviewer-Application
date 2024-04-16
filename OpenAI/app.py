@@ -15,7 +15,7 @@ prompt = st.text_area("Enter your Python code here:", height=200)
 
 # Button to trigger code review
 if st.button("Review the Code"):
-    st.markdown("<h2 style='color:green;'>Code Reviewer</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color:green;'>Review Result</h2>", unsafe_allow_html=True)
     response = client.chat.completions.create(
         model="gpt-3.5-turbo-0301",
         messages=[
